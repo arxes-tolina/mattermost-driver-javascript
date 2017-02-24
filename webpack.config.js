@@ -16,7 +16,7 @@ var config = {
         loaders: [
             {
                 test: /\.jsx?$/,
-                loader: 'babel',
+                loader: 'babel-loader',
                 exclude: /(node_modules|non_npm_dependencies)/,
                 query: {
                     presets: ['es2015-webpack', 'stage-0'],
