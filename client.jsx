@@ -37,6 +37,11 @@ export default class Client {
         this.defaultHeaders['Accept-Language'] = locale;
     }
 
+    setOAuthToken(token) {
+        this.token = token;
+        this.useHeaderToken();
+    }
+
     setTeamId(id) {
         this.teamId = id;
     }
@@ -1856,6 +1861,16 @@ export default class Client {
             end(this.handleResponse.bind(this, 'registerOAuthApp', success, error));
 
         this.track('api', 'api_apps_register');
+    }
+
+    listOAuthApps(success, error) {
+        request.
+        get(`${this.getOAuthRoute()}/list`).
+        set(this.defaultHeaders).
+        type('application/json').
+        accept('application/json').
+        send().
+        end(this.handleResponse.bind(this, 'getOAuthApps', success, error));
     }
 
     allowOAuth2(responseType, clientId, redirectUri, state, scope, success, error) {
