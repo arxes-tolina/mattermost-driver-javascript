@@ -3,15 +3,6 @@
   "version": "3.4.0",
   "description": "Javascript library for interacting with the Mattermost API",
   "main": "lib/client.js",
-  "files": [
-    "client.jsx",
-    "websocket_client.jsx",
-    "README.md",
-    "Makefile",
-    "lib",
-    "lib/client.js",
-    "lib/client.js.map"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arxes-tolina/mattermost-javascript.git"
