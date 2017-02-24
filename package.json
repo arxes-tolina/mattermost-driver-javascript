@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattermost/mattermost-javascript.git"
+    "url": "git+https://github.com/arxes-tolina/mattermost-javascript.git"
   },
   "keywords": [
     "mattermost",
